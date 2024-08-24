@@ -1,0 +1,7 @@
+{%extends 'base.html' %}
+
+{% block content %}
+  <h1>Today is {{ cur_time }}</h1>
+  
+  <a href="{% url 'notes_list' %}"><button class="btn btn-primary">Check Blogs</button></a>
+{% endblock %}

@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+
+
+{% block content %}
+<h1>SIGNUP</h1>
+<div class="card p-3 " style="align-items: center; width: 30rem; margin: auto;">
+
+
+<form method="POST"  style="text-align: start;">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+</div>
+{% endblock %}

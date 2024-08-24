@@ -1,0 +1,12 @@
+{%extends 'base.html' %}
+
+
+{% block content %}
+ <h1>You are authorized</h1>
+
+ <a href="{% url 'notes_create' %}"><button class="btn btn-primary">Create Note</button></a>    
+ <a href=""><button class="btn btn-primary">Update Note</button></a>    
+ 
+ 
+
+{% endblock %}
